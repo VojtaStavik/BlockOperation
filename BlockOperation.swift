@@ -56,7 +56,6 @@ public class BlockOperation: NSOperation {
     }
     
     override public func main() {
-        print("run")
         self.operationBlock { [weak self] in
             self?.finish()
         }
